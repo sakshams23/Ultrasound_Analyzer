@@ -5,7 +5,7 @@ import numpy as np
 from PIL import Image
 
 # Load the trained model
-model = load_model("ultrasound_model.h5")
+model = load_model("ultrasound_classifier.h5")
 
 # Define class labels
 class_labels = ["benign", "malignant", "normal"]  # Adjust as per your training order
