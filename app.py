@@ -25,4 +25,4 @@ if uploaded_file is not None:
     predicted_class = class_labels[np.argmax(prediction)]
 
     st.markdown(f"### Prediction: **{predicted_class.upper()}**")
-    st.markdown(f" Confidence Scores: {dict(zip(class_labels, (prediction[0].round(2))*100))}")
+    st.markdown(f" Confidence Scores: {dict(zip(class_labels, prediction[0].round(2)))}")
